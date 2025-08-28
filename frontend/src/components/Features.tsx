@@ -27,32 +27,34 @@ const Features = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <div className="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 border border-brand-100">
             <span className="text-brand-600 font-medium text-sm">
-              Designed for Doctors
+              Progettato per i Medici
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900">
-            Simplify Patient Communication
+            Semplifica la comunicazione con i tuoi pazienti
           </h2>
           <p className="text-lg text-slate-600">
-            Our platform helps doctors collect reports and schedule consultations through secure, customized links sent directly to patients.
+            La nostra piattaforma aiuta i medici a raccogliere referti e
+            programmare consulenze tramite link sicuri e personalizzati inviati
+            direttamente ai pazienti.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureCard
             icon={<Link className="h-6 w-6" />}
-            title="Send Secure Links"
-            description="Generate and send secure links to patients to request specific medical reports or schedule consultations."
+            title="Invia Link Sicuri"
+            description="Genera e invia ai pazienti link protetti per richiedere referti medici specifici o fissare una consulenza."
           />
           <FeatureCard
             icon={<FileText className="h-6 w-6" />}
-            title="Manage Patient Reports"
-            description="View, organize, and download medical reports submitted by your patients through your personalized dashboard."
+            title="Gestisci i Referti dei Pazienti"
+            description="Visualizza, organizza e scarica i referti inviati dai tuoi pazienti attraverso la tua dashboard personalizzata."
           />
           <FeatureCard
             icon={<Calendar className="h-6 w-6" />}
-            title="Online Consultations"
-            description="Schedule and conduct virtual consultations based on your availability with automatic patient notifications."
+            title="Videoconsulti Online"
+            description="Programma e svolgi consulenze virtuali in base alla tua disponibilità, con notifiche automatiche ai pazienti."
           />
         </div>
 
@@ -60,21 +62,23 @@ const Features = () => {
           <div className="animate-fade-in-right order-2 lg:order-1">
             <div className="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 border border-brand-100">
               <span className="text-brand-600 font-medium text-sm">
-                Easy Report Collection
+                Raccolta Referti Immediata
               </span>
             </div>
             <h2 className="text-3xl font-bold mb-4 text-slate-900">
-              Request and Receive Patient Reports
+              Richiedi e ricevi i referti dei tuoi pazienti
             </h2>
             <p className="text-lg text-slate-600 mb-6">
-              Send customized links to patients requesting specific reports. Patients can easily upload reports which you can view and download immediately.
+              Invia link personalizzati per richiedere referti specifici: i
+              pazienti possono caricarli in pochi secondi e tu li visualizzi e
+              scarichi subito.
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                "Generate custom report request links for each patient",
-                "Automatic patient notifications with clear instructions",
-                "Secure upload system with verification",
-                "Organize reports by patient, date, or type",
+                "Genera link di richiesta referti personalizzati per ogni paziente",
+                "Notifiche automatiche ai pazienti con istruzioni chiare",
+                "Sistema di upload sicuro e verificato",
+                "Organizza i referti per paziente, data o tipologia",
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mr-3 mt-0.5 flex-shrink-0">
@@ -99,7 +103,7 @@ const Features = () => {
               ))}
             </ul>
             <Button className="bg-brand-500 hover:bg-brand-600 transition-colors group">
-              Learn More About Reports{" "}
+              Scopri di più sui Referti{" "}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
@@ -117,21 +121,23 @@ const Features = () => {
           <div className="animate-fade-in-left">
             <div className="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 border border-brand-100">
               <span className="text-brand-600 font-medium text-sm">
-                Virtual Consultations
+                Videoconsulti Online
               </span>
             </div>
             <h2 className="text-3xl font-bold mb-4 text-slate-900">
-              Send Links For Online Consultations
+              Invia link per le tue consulenze virtuali
             </h2>
             <p className="text-lg text-slate-600 mb-6">
-              After reviewing reports, easily send consultation links to patients allowing them to book appointments based on your availability.
+              Dopo aver revisionato i referti, condividi facilmente un link con
+              i pazienti: potranno prenotare l’appuntamento in base alla tua
+              disponibilità.
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                "Set your availability with flexible scheduling",
-                "Patient self-scheduling through secure links",
-                "Automatic reminders for both you and patients",
-                "Integrated video consultation platform",
+                "Imposta la tua disponibilità con un calendario flessibile",
+                "I pazienti prenotano in autonomia tramite link sicuri",
+                "Promemoria automatici per te e per i pazienti",
+                "Piattaforma di videoconsulto integrata e semplice da usare",
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 mr-3 mt-0.5 flex-shrink-0">
@@ -156,7 +162,7 @@ const Features = () => {
               ))}
             </ul>
             <Button className="bg-brand-500 hover:bg-brand-600 transition-colors group">
-              Learn About Consultations{" "}
+              Scopri di più sulle Consulenze{" "}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
@@ -167,3 +173,7 @@ const Features = () => {
 };
 
 export default Features;
+```
+
+Recommendation: sostituisci il vecchio file `Features.tsx` con questo.
+Next step: ricompila il progetto per vedere il frontend con i testi in italiano.
