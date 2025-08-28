@@ -37,21 +37,21 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "This platform has transformed how I collect reports from patients. The secure link system makes it so simple for both me and my patients.",
-      name: "Dr. Sarah Johnson",
-      title: "Cardiologist",
+      "Questa piattaforma ha rivoluzionato il modo in cui raccolgo i referti dai pazienti. Il sistema di link sicuri è semplicissimo, sia per me sia per loro.", 
+      name: "Dr.ssa Benedetta D.",
+      title: "Cardiologa",
     },
     {
       quote:
-        "I've reduced my administrative work by 40% since using this platform. The report management system is exactly what I needed.",
-      name: "Dr. Michael Chen",
-      title: "Family Physician",
+      "Ho ridotto del 40% il mio lavoro amministrativo da quando utilizzo questa piattaforma. La gestione dei referti è esattamente ciò di cui avevo bisogno.",  
+      name: "Dr. Giovanni B.",
+      title: "Chirurgo Ortopedico",
     },
     {
       quote:
-        "The online consultation scheduling is seamless. My patients appreciate the easy booking process and I love the organized calendar integration.",
-      name: "Dr. Emily Rodriguez",
-      title: "Pediatrician",
+      "La pianificazione dei videoconsulti è fluida e senza intoppi. I miei pazienti apprezzano il processo di prenotazione semplice e io adoro l’integrazione con il calendario.",     
+      name: "Dr.ssa Giulia S.",
+      title: "Pediatra",
     },
   ];
 
