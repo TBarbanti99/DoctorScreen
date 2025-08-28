@@ -1,0 +1,16 @@
+
+
+
+
+
+model consultation {
+  id                String   @id @default(cuid())
+  createdAt         DateTime @default(now())
+  email             String
+  name              String
+  note              String  @db.LongText
+  phone             String
+  status            String
+  bookingUrl        String
+  doctorId          String?
+}

@@ -1,0 +1,35 @@
+
+enum ReportStatus {
+    PENDING
+    IN_PROGRESS
+    COMPLETED
+    REJECTED
+}
+
+enum paymentStatus {
+    PENDING
+    COMPLETED
+    FAILED
+}
+
+model Report {
+    id String @id @default(uuid())
+    fullName String
+    reportEmail String
+    description String @db.VarChar(10000)
+    doctorId String
+    paymentStatus paymentStatus @default(PENDING)
+    doctor User @relation(fields: [doctorId], references: [id])
+    createdAt DateTime @default(now())
+    status ReportStatus @default(PENDING)
+    reportAssets ReportAssets[]
+}
+
+model ReportAssets {
+    id String @id @default(uuid())
+    fileName String
+    fileURL String
+    reportId String
+    mimeType String
+    report Report @relation(fields: [reportId], references: [id])
+}

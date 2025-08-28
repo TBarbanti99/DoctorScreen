@@ -1,0 +1,12 @@
+model payment {
+    id            String @id @default(uuid())
+    reportId      String
+    amount        Int
+    sessionId     String
+    paymentStatus String
+    currency      String
+    email         String
+    name          String
+    doctorId      String?
+    createdAt   DateTime @default(now())
+}

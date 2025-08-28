@@ -1,0 +1,13 @@
+model Patient {
+    id          String   @id @default(uuid())
+    firstName   String
+    lastName    String
+    email       String   @unique
+    age         Int
+    gender      String
+    phoneNumber String
+    status      Boolean  @default(true)
+    createdAt   DateTime @default(now())
+    userId     String
+    user   User @relation(fields: [userId], references: [id])
+}

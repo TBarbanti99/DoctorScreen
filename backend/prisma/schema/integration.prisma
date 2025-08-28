@@ -1,0 +1,16 @@
+model Integration {
+    id            String  @id @default(uuid())
+    platform      String
+    platformURL   String?
+    access_token  String?  @db.VarChar(1000)
+    refresh_token String? @db.VarChar(1000)
+    publicKey     String?  @db.VarChar(1000)
+    secretKey     String? @db.VarChar(1000)
+    stripeAmount  Int?
+    stripeAmountReport Int?
+    expires_in    Int?
+    meta_data     Json?
+    orgUri        String?
+    userId        String
+    user          User    @relation(fields: [userId], references: [id])
+}

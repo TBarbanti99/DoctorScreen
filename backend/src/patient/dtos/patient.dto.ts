@@ -1,0 +1,1 @@
+export const createPatientDTO = ["firstName","lastName","email","age","gender","phoneNumber"]
