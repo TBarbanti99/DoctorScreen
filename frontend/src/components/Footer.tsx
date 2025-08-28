@@ -30,8 +30,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-slate-600 mb-6">
-              Simplifying healthcare communication for patients and doctors
-              everywhere. Secure, efficient, and user-friendly.
+              Semplifichiamo la comunicazione sanitaria tra pazienti e medici, ovunque.
+            Sicura, efficiente e facile da usare.
+
             </p>
             <div className="flex space-x-4">
               {["#", "#"].map((href, i) => (
